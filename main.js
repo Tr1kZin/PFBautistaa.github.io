@@ -37,7 +37,9 @@ else{
     
 };
   */
-const actividadSemanal = [32, 12, 45, 98, 2, 43, 21]
+const dineroLavado =[`Dinero Total Lavado`];
+const usuarios =["mario", "juventus", "anastasio"]
+const actividadSemanal = [32, 12, 45, 98, 2, 43, 21];
 const menosActividad = 2;
 const indice = actividadSemanal.indexOf(menosActividad);
 if (indice !== -1) {
@@ -45,8 +47,10 @@ if (indice !== -1) {
 }
 
 
+
  function menores(){
     alert(`No puedes ingresar vuelve cuando tus ${edad} años sean 18.`)
+    
  }
  let descuento1 = 400;
  let descuento2 = 700;
@@ -60,12 +64,15 @@ if (indice !== -1) {
 {plan: "3. Seguridad Alta / Se descuenta $1000" },
  ]
   
-let edad = parseInt(prompt("Ingrese su edad"));
+ let edad = parseInt(prompt("Ingrese su edad"));
 
 
 if (edad >= 18) {
     alert("Bienvenido a DeepMarket")
     let nombre = prompt("Ingrese su Nombre")
+    usuarios.push(nombre)
+    console.log(usuarios);
+
     alert(`Hola ${nombre} , A continuacion le mostraremos nuestros planes de seguridad para realizar el lavado de dinero`)
     
     for (const plans of planes) {
@@ -79,8 +86,9 @@ if (edad >= 18) {
         if (dinero > 400){
             alert(`A sus $${dinero} se le descontara lo acordado.`);
             let resultado = resta(dinero,descuento1);
+            dineroLavado.push(resultado) 
+            console.log(dineroLavado);            
             alert(`El total de $${resultado} sera lavado. ACEPTAS? `)
-
             for (let i = 0; i < 100; i = i + 9) {
                 alert(`Lavando dinero ${i} %`)  
                  }
@@ -97,7 +105,11 @@ if (edad >= 18) {
         if (dinero2 > 700){
             alert(`A sus $${dinero2} se le descontara lo acordado.`);
             let resultado2 = resta(dinero2,descuento2);
-            alert(`El total de $${resultado2} sera lavado . ACEPTAS?`)
+            dineroLavado.push(resultado2) 
+            console.log(dineroLavado); 
+            alert(`El total de $${resultado2} sera lavado . ACEPTAS?`);
+            
+
 
             for (let i = 0; i < 100; i = i + 9) {
                 alert(`Lavando dinero ${i} %`)  
@@ -115,6 +127,8 @@ if (edad >= 18) {
         if (dinero3 > 700){
             alert(`A sus $${dinero3} se le descontara lo acordado.`);
             let resultado3 = resta(dinero3,descuento3);
+            dineroLavado.push(resultado3) 
+            console.log(dineroLavado); 
             alert(`El total de $${resultado3} sera lavado . ACEPTAS?`)
 
             for (let i = 0; i < 100; i = i + 9) {
@@ -124,13 +138,16 @@ if (edad >= 18) {
 
         }else{
             alert(`Datos incorrectos. Recargue la pagina ${nombre}`)
-        }       
+        }  
+       
     }
 
-
+    
+  
 
 }else{
  menores();
+ 
 }
 
 
