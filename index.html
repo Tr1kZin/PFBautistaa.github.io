@@ -6,6 +6,7 @@
     <meta name="description" content="Somos  un emprendimiento centrado en la venta de articulos de League Of Legends">
     <meta name="keywords" content="leagueoflegends, lol, articulos lol, tienda">
     <!-- fin metas -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora&family=Roboto+Mono&family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
   <div class="container-body">
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">LeagueShop</a>
+          <a class="navbar-brand"  id="titulo-nombre">LeagueShop</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -47,7 +48,10 @@
                       <a class="nav-link" href="./pages/infoitems.html">InfoItems</a>
                     </li>
                     <div class="espaciomini"></div>
+
                     
+                    <div class="espaciomini"></div>
+
                     <div id="productos" class="productos-carrito">
      
                     </div>
@@ -63,8 +67,11 @@
                   
                     <button id="borrarCarrito" class="btn-eliminarcarrito">Eliminar Carrito</button>
                   </div>
-                  <div class="espacio"></div>
-                  <p>Dylan Bautista &copy; 2023 Desarrollo Web. </p>
+                  <div class="espaciomini"></div>
+                  <p>Esta página tiene <span id="likesdados">0</span> likes.</p>
+                  <button id="botonlikes">Me gusta</button>
+                  <div class="espaciomini"></div>
+                  <p>Dylan Bautista &copy; 2023 Javascript.</p>
                 
               
             </div>
@@ -226,6 +233,7 @@
         <p>Copyright &copy; 2023. <a href="#">Dylan Bautista</a> | Todos Los Derechos Reservados</p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
 </body>
