@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Manejador de eventos para el botón de "Me gusta"
   likeButton.addEventListener('click', function () {
       // Simula una solicitud al servidor con fetch
-      fetch('http://127.0.0.1:5500/index.html', {
+      fetch('https://tr1kzin.github.io/PreEntrega3Bautistaa.github.io/', {
           method: 'POST', // Puedes usar POST para simular una actualización en el servidor
       })
       .then(response => response.json())
